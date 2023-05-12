@@ -19,8 +19,7 @@ public:
    void setNumerador(float newNumerador);
    float getDenominador(void);
    void setDenominador(float newDenominador);
-   Fraccion(float num, float den);
-   float calculo(Fraccion obj1, Fraccion obj2);
+
    
    ~Fraccion();
 
