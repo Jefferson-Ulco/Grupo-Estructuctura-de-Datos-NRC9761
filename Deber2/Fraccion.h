@@ -16,7 +16,7 @@ class Fraccion
 public:
 	Fraccion();
 	
-	Fraccion();
+	Fraccion(float num, float den);
    float getNumerador(void);
    void setNumerador(float newNumerador);
    float getDenominador(void);
