@@ -1,4 +1,3 @@
-
 /***********************************************************************
 Universidad de las Fuerzas Armadas ESPE
 AUTORES: Alejandro Cuadrado, Milena Maldonado, Jefferson Ulco
@@ -8,17 +7,18 @@ Sobrecarga de operadores mod
  ***********************************************************************/
 #if !defined(operadores_h)
 #define operadores_h
+template <typename T>
 class Operadores
 {
 private:
-   int x;
+   T x;
 
 public:
 	Operadores();
-   Operadores(int  x2);
-   Operadores operator%(const Operadores& m)  ;
-   int getX(void);
-   void setX(int newY);
+   Operadores(T  x2);
+   Operadores operator%(const Operadores<T>& m)  ;
+   T getX(void);
+   void setX(T newY);
 
 protected:
 };
