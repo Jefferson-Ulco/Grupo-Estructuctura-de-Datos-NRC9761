@@ -1,20 +1,25 @@
+
+/***********************************************************************
+Universidad de las Fuerzas Armadas ESPE
+AUTORES: Alejandro Cuadrado, Milena Maldonado, Jefferson Ulco
+FECHA DE CREACIÓN: 17/05/2023
+FECHA DE MODIFICACIÓN: 18/05/2023
+Sobrecarga de operadores mod
+ ***********************************************************************/
 #if !defined(operadores_h)
 #define operadores_h
-#include <iostream>
-#include <stdlib.h>
-#include <conio.h>
-#include <stdio.h>
-using namespace std;
 class Operadores
 {
 private:
    int x;
+
 public:
-   Operadores(const int  x);
-   Operadores operator %( Operadores& m)const ;
+	Operadores();
+   Operadores(int  x2);
+   Operadores operator%(const Operadores& m)  ;
    int getX(void);
-   void setX(int newX);
-	
+   void setX(int newY);
+
 protected:
 };
 
