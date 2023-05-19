@@ -7,36 +7,34 @@ Sobrecarga de operadores mod
  ***********************************************************************/
 
 #include "Operadores.h"
-
-Operadores::Operadores()
+template <typename T>
+Operadores<T>::Operadores()
 {
 
 }
-
-Operadores::Operadores(const int x2)
+template <typename T>
+Operadores<T>::Operadores(const T x2)
 {
    	this->x = x2;
-
-
 }
-Operadores Operadores::operator %( const Operadores& m)
+template <typename T>
+Operadores<T> Operadores<T>::operator %( const Operadores<T>& m)
 {
-	Operadores resultado;
+	Operadores<T> resultado;
 	resultado.setX(this->x%m.x);
 
 	return resultado;
 
 }
 
-
-int Operadores::getX(void)
+template <typename T>
+T Operadores<T>::getX(void)
 {
    return x;
 }
 
-
-void Operadores::setX(int newX)
+template <typename T>
+void Operadores<T>::setX(T newX)
 {
    x = newX;
 }
-
