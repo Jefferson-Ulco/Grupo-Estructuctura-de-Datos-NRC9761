@@ -1,14 +1,31 @@
+/***********************************************************************
+Universidad de las Fuerzas Armadas ESPE
+AUTORES: Alejandro Cuadrado, Milena Maldonado, Jefferson Ulco
+FECHA DE CREACIÓN: 17/05/2023
+FECHA DE MODIFICACIÓN: 18/05/2023
+Sobrecarga de operadores mod
+ ***********************************************************************/
+
 #include "Operadores.h"
+
+Operadores::Operadores()
+{
+
+}
 
 Operadores::Operadores(const int x2)
 {
    	this->x = x2;
 
+
 }
-Operadores Operadores::operator %( Operadores& m, Operadores& p)const 
+Operadores Operadores::operator %( const Operadores& m)
 {
-   Operadores mod(p.x % m.x);
-   return mod;
+	Operadores resultado;
+	resultado.setX(this->x%m.x);
+
+	return resultado;
+
 }
 
 
@@ -22,3 +39,4 @@ void Operadores::setX(int newX)
 {
    x = newX;
 }
+
