@@ -1,3 +1,10 @@
+/***********************************************************************
+Universidad de las Fuerzas Armadas ESPE
+AUTORES: Alejandro Cuadrado, Milena Maldonado, Jefferson Ulco
+FECHA DE CREACIÓN: 11/05/2023
+FECHA DE MODIFICACIÓN: 11/05/2023
+Enunciado
+ ***********************************************************************/
 #ifndef MATRIZ_CPP
 #define MATRIZ_CPP
 #include "Matriz.h"

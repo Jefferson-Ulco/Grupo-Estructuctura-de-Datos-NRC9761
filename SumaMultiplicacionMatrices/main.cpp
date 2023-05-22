@@ -1,3 +1,10 @@
+/***********************************************************************
+Universidad de las Fuerzas Armadas ESPE
+AUTORES: Alejandro Cuadrado, Milena Maldonado, Jefferson Ulco
+FECHA DE CREACIÓN: 11/05/2023
+FECHA DE MODIFICACIÓN: 11/05/2023
+Enunciado
+ ***********************************************************************/
 #include <iostream>
 #include "Matriz.h"
 #include "Operaciones.h"

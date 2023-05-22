@@ -1,6 +1,12 @@
+/***********************************************************************
+Universidad de las Fuerzas Armadas ESPE
+AUTORES: Alejandro Cuadrado, Milena Maldonado, Jefferson Ulco
+FECHA DE CREACIÓN: 11/05/2023
+FECHA DE MODIFICACIÓN: 11/05/2023
+Enunciado
+ ***********************************************************************/
 #ifndef OPERACIONES_H
 #define OPERACIONES_H
-#include "Operaciones.cpp"
 #include "Matriz.h"
 
 template <typename T>
@@ -10,6 +16,6 @@ public:
     static Matriz<T> multiplicacion(Matriz<T>& matriz1, Matriz<T>& matriz2);
 };
 
-
+#include "Operaciones.cpp"
 
 #endif  
