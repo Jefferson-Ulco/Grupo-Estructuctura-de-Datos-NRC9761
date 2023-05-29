@@ -1,5 +1,6 @@
+#ifndef LAMBDA_H
+#define LAMBDA_H
 
-#include "lambda.h"
 #include <functional>
 
 class Example {
