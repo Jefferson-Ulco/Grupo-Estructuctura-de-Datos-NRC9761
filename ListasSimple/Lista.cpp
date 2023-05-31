@@ -14,10 +14,12 @@ void Lista::insertar(int val) {
     Nodo* nuevo = new Nodo(val);
     if (listaVacia()) {
         primero = nuevo;
+         actual=nuevo;
     } else {
         nuevo->siguiente = primero;
+            primero = nuevo;
     }
-    primero = nuevo;
+
 }
 
 void Lista::insertarCola(int val) {
